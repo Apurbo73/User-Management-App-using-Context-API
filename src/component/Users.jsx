@@ -5,7 +5,7 @@ import { userContext } from "./context/userContext";
 const Users = () => {
   const {users,setUsers}= useContext(userContext)
   return (
-    <div className="d-flex mx-auto container">
+    <div className="d-flex mx-auto container flex-wrap">
       {users.map(user =>
         <User
           user={user}
